@@ -175,4 +175,17 @@ class Admin extends My_Controller {
 	    $mpdf->WriteHTML($html);
 	    $mpdf->Output();
 	 }
+	  function print_records(){
+	 	$data['page'] = 'Print Records';
+		$data['profile'] = $this->get_model->getProfile();	
+	 	$data['records'] = $this->get_model->getRecords()->result_array();
+ 		$html = $this->load->view('pages/admin/print/print_records', $data, true);
+ 		$mpdf->curlAllowUnsafeSslRequests = true;
+	    $mpdf = new \Mpdf\Mpdf([
+	      'format' => 'A4'
+	    ]);
+	    $mpdf->AddPage('L');
+	    $mpdf->WriteHTML($html);
+	    $mpdf->Output();
+	 }
 }

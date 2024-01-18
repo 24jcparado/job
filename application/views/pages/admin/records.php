@@ -25,6 +25,10 @@
           <div class="card">
             <div class="card-header pb-0 px-3">
               <h6 class="mb-0">Records</h6>
+              <div class="card-body pt-4 p-3">
+               <div class="text-end">
+                <a href="<?=base_url('admin/print_records')?>" class="btn btn-primary mb-3" target="blank"><i class="bi bi-printer"> Print</i> </a>
+               </div>
             </div>
             <div class="card-body pt-4 p-3">
 

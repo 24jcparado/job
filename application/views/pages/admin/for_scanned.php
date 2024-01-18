@@ -27,9 +27,6 @@
               <h6 class="mb-0">For Released</h6>
             </div>  
             <div class="card-body pt-4 p-3">
-               <div class="text-end">
-                    <button class="btn btn-outline-primary btn-sm mb-3" id="button">Print</button>
-                  </div>
               <table class="table" id="table">
                   <thead>
                     <tr>
